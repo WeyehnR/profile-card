@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sarah Dole - Frontend Engineer Profile</title>
+    <meta
+      name="description"
+      content="Profile card for Sarah Dole, Front End Engineer at Microsoft"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <!-- CSS Variables must be loaded first -->
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Tailwind CDN allows you to use Tailwind classes immediately in your HTML without any installation steps. 
+      If you're not using Tailwind, you may delete the <script> -->
+    <!-- Get started on Tailwind: https://tailwindcss.com/docs/installation/play-cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="icon" href="img/favicon.ico" sizes="any" />
+  </head>
+  <body>
+    <!-- Skip to main content for keyboard navigation -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <div class="container">
+      <main id="main-content" role="main">
+        <article class="profile-card" aria-labelledby="profile-heading">
+          <header class="details">
+            <div class="image-wrapper">
+              <img
+                class="profile-image"
+                src="./img/profile.png"
+                alt="Sarah Dole profile photo"
+                loading="lazy"
+              />
+            </div>
+            <div>
+              <h1 id="profile-heading" class="title">Sarah Dole</h1>
+              <p class="subtitle" role="doc-subtitle">
+                Front End Engineer @ Microsoft
+              </p>
+            </div>
+            <p class="description">
+              I turn coffee into bugs which are fixed by someone else. Certified
+              Stack Overflow and ChatGPT developer.
+            </p>
+          </header>
+          <section class="actions" aria-label="Contact and social media">
+            <button
+              class="contact-me-btn"
+              type="button"
+              aria-describedby="contact-description"
+            >
+              Contact me
+            </button>
+            <span id="contact-description" class="sr-only"
+              >Send a message to Sarah Dole</span
+            >
+
+            <nav class="socials" aria-label="Social media profiles">
+              <a
+                href="https://github.com/sarahdole"
+                aria-label="Sarah Dole's GitHub profile"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <iconify-icon
+                  icon="mdi:github"
+                  aria-hidden="true"
+                ></iconify-icon>
+                <span class="sr-only">GitHub</span>
+              </a>
+              <a
+                href="https://linkedin.com/in/sarahdole"
+                aria-label="Sarah Dole's LinkedIn profile"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <iconify-icon
+                  icon="mdi:linkedin"
+                  aria-hidden="true"
+                ></iconify-icon>
+                <span class="sr-only">LinkedIn</span>
+              </a>
+              <a
+                href="https://instagram.com/sarahdole"
+                aria-label="Sarah Dole's Instagram profile"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <iconify-icon
+                  icon="mdi:instagram"
+                  aria-hidden="true"
+                ></iconify-icon>
+                <span class="sr-only">Instagram</span>
+              </a>
+              <a
+                href="https://x.com/sarahdole"
+                aria-label="Sarah Dole's X (formerly Twitter) profile"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <iconify-icon
+                  icon="ri:twitter-x-line"
+                  aria-hidden="true"
+                ></iconify-icon>
+                <span class="sr-only">X (formerly Twitter)</span>
+              </a>
+            </nav>
+          </section>
+        </article>
+      </main>
+
+      <!-- Attribute this challenge to yourself! -->
+      <footer class="credits" data-gfe-screenshot-exclude="true">
+        A challenge by
+        <a
+          href="https://www.greatfrontend.com/projects?ref=challenges"
+          target="_blank"
+          rel="noopener"
+          >GreatFrontEnd Projects</a
+        >. Built by
+        <a
+          href="https://www.greatfrontend.com/projects/u/username"
+          target="_blank"
+          rel="noopener"
+          >Weyehn Reeves</a
+        >.
+      </footer>
+      <script src="js/index.js"></script>
+    </div>
+  </body>
+</html>
