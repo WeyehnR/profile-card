@@ -37,6 +37,8 @@
   --container-max-width: 375px;
   --container-padding: 17.5px;
   --card-max-width: 340px;
+  --card-width: 340px;
+  --card-height: 428px;
   --card-padding: 24px 16px;
 
   /* Typography */

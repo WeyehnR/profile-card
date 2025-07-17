@@ -11,14 +11,17 @@ body {
   margin: 0;
   font-family: var(--font-family);
   min-height: 100vh;
+  width: 100vw;
   background: var(--bg-gradient);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  padding: var(--container-padding);
+  padding-top: 200px;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
 }
 
 /* Container */
@@ -27,6 +30,7 @@ body {
   max-width: var(--container-max-width);
   display: flex;
   justify-content: center;
+  align-items: flex-start;
 }
 
 /* Card */
@@ -35,8 +39,8 @@ body {
   border-radius: var(--radius-card);
   box-shadow: var(--shadow-card);
   padding: var(--space-xl) var(--space-md);
-  width: 100%;
-  max-width: var(--card-max-width);
+  width: var(--card-width);
+  height: var(--card-height);
   display: flex;
   flex-direction: column;
   gap: var(--space-2xl);
@@ -178,10 +182,15 @@ body {
 /* Responsive Design */
 @media (max-width: var(--breakpoint-mobile)) {
   body {
-    padding: var(--space-md);
+    padding-top: var(--space-xl);
+    padding-left: var(--space-md);
+    padding-right: var(--space-md);
   }
 
   .card {
+    width: calc(100vw - 32px);
+    height: auto;
+    max-width: var(--card-width);
     padding: var(--space-lg) var(--space-md);
   }
 
