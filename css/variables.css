@@ -10,6 +10,12 @@
   --color-text-muted: #777777;
   --color-text-link: #000000;
 
+  /* Figma Design System Colors */
+  --Text-primary: #171717;
+  --colors-neutral-900: #171717;
+  --Text-secondary: #525252;
+  --colors-neutral-600: #525252;
+
   /* Background */
   --bg-gradient: linear-gradient(148deg, #f9fafb 8.89%, #d2d6db 100.48%);
   --bg-card: #ffffff;
@@ -49,11 +55,13 @@
   /* Font Sizes */
   --font-size-xs: 11px;
   --font-size-sm: 14px;
+  --font-size-md: 16px;
   --font-size-lg: 20px;
 
   /* Line Heights */
   --line-height-xs: 16px;
   --line-height-sm: 20px;
+  --line-height-md: 24px;
   --line-height-lg: 28px;
 
   /* Font Weights */
