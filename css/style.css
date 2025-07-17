@@ -78,10 +78,14 @@ body {
 }
 
 .profile__name {
-  font-size: var(--font-size-lg);
-  font-weight: var(--font-weight-semibold);
-  line-height: var(--line-height-lg);
-  color: var(--color-text-primary);
+  align-self: stretch;
+  color: var(--Text-primary, var(--colors-neutral-900, #171717));
+  text-align: center;
+  font-family: "Noto Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 140% */
   margin: 0;
 }
 
