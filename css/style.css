@@ -122,25 +122,24 @@ body {
 /* Primary Button */
 .btn {
   display: flex;
-  align-items: center;
+  padding: var(--padding-251B-px, 10px) var(--padding-416-px, 16px);
   justify-content: center;
-  gap: 6px;
-  min-height: var(--button-min-height);
-  padding: var(--space-sm) var(--space-md);
+  align-items: center;
+  gap: var(--gap-156-px, 6px);
+  align-self: stretch;
   border: none;
-  border-radius: var(--radius-button);
+  border-radius: var(--rounded, 4px);
   font-family: var(--font-family);
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-md);
   font-weight: var(--font-weight-medium);
-  line-height: var(--line-height-sm);
+  line-height: var(--line-height-md);
   cursor: pointer;
   transition: var(--transition-background);
   text-decoration: none;
-  width: 100%;
 }
 
 .btn--primary {
-  background-color: var(--color-primary);
+  background: var(--colors-indigo-700, #4338ca);
   color: var(--color-white);
   box-shadow: var(--shadow-button);
 }
@@ -163,17 +162,19 @@ body {
 .social-links {
   display: flex;
   justify-content: center;
-  gap: var(--space-md);
+  align-items: center;
+  gap: var(--gap-28-px, 8px);
   flex-wrap: wrap;
 }
 
 .social-link {
   display: flex;
-  align-items: center;
+  padding: var(--padding-28-px, 8px);
   justify-content: center;
+  align-items: center;
   width: var(--social-icon-size);
   height: var(--social-icon-size);
-  border-radius: var(--radius-button);
+  border-radius: var(--rounded, 4px);
   color: var(--color-primary);
   text-decoration: none;
   transition: var(--transition-background);
@@ -184,8 +185,8 @@ body {
 }
 
 .social-link__icon {
-  width: var(--icon-size);
-  height: var(--icon-size);
+  width: var(--social-icon-inner-size);
+  height: var(--social-icon-inner-size);
 }
 
 /* Responsive Design */

@@ -15,6 +15,7 @@
   --colors-neutral-900: #171717;
   --Text-secondary: #525252;
   --colors-neutral-600: #525252;
+  --colors-indigo-700: #4338ca;
 
   /* Background */
   --bg-gradient: linear-gradient(148deg, #f9fafb 8.89%, #d2d6db 100.48%);
@@ -23,8 +24,8 @@
 
   /* Shadows */
   --shadow-card: 0px 1px 2px rgba(0, 0, 0, 0.06), 0px 1px 3px rgba(0, 0, 0, 0.1);
-  --shadow-button: 0px 1px 2px rgba(0, 0, 0, 0.06),
-    0px 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-button: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.06);
 
   /* Border Radius */
   --radius-card: 8px;
@@ -75,6 +76,15 @@
   --button-min-height: 44px;
   --social-icon-size: 36px;
   --icon-size: 20px;
+  --social-icon-inner-size: 24px;
+
+  /* Figma Layout Variables */
+  --padding-28-px: 8px;
+  --gap-28-px: 8px;
+  --rounded: 4px;
+  --padding-251B-px: 10px;
+  --padding-416-px: 16px;
+  --gap-156-px: 6px;
 
   /* Transitions */
   --transition-color: color 0.2s ease;
