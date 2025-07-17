@@ -231,6 +231,150 @@ body {
   }
 }
 
+/* Tablet styles - based on Figma tablet design (768x1024) */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+    padding: var(--space-2xl) var(--space-lg);
+    min-height: 100vh;
+  }
+
+  .profile-card {
+    max-width: 340px;
+    min-height: 428px;
+    margin: 0 auto;
+    padding: var(--space-xl) var(--space-md);
+  }
+
+  /* Ensure proper spacing matches Figma specs */
+  .details {
+    gap: var(--space-xl); /* 24px */
+  }
+
+  .actions {
+    gap: var(--space-xl); /* 24px between button and socials */
+  }
+
+  .socials {
+    gap: var(--space-md); /* 16px between social icons */
+    justify-content: center;
+  }
+
+  /* Profile image positioning - centered as per Figma */
+  .image-wrapper {
+    justify-content: center;
+    margin-bottom: 0;
+  }
+
+  /* Button styling to match Figma specs */
+  .contact-me-btn {
+    width: 100%;
+    max-width: 308px;
+    min-height: 44px;
+    margin: 0 auto;
+  }
+
+  /* Social icons layout - centered with proper spacing */
+  .socials {
+    max-width: 308px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .socials a {
+    width: 36px;
+    height: 36px;
+  }
+
+  /* Typography adjustments for better tablet display */
+  .title {
+    margin-bottom: var(--space-xs);
+  }
+
+  .subtitle {
+    margin-top: var(--space-xs);
+    margin-bottom: 0;
+  }
+
+  /* Credits positioning for tablet */
+  .credits {
+    margin-top: var(--space-2xl);
+    padding: 0 var(--space-lg);
+  }
+}
+
+/* Desktop styles - based on Figma desktop design (1440x768) */
+@media (min-width: 1025px) {
+  .container {
+    max-width: 1440px;
+    padding: var(--space-2xl) var(--space-lg);
+    min-height: 100vh;
+  }
+
+  .profile-card {
+    max-width: 340px;
+    min-height: 428px;
+    margin: 0 auto;
+    padding: var(--space-xl) var(--space-md);
+  }
+
+  /* Ensure proper spacing matches Figma specs */
+  .details {
+    gap: var(--space-xl); /* 24px */
+  }
+
+  .actions {
+    gap: var(--space-xl); /* 24px between button and socials */
+  }
+
+  .socials {
+    gap: var(--space-md); /* 16px between social icons */
+    justify-content: center;
+  }
+
+  /* Profile image positioning - centered as per Figma */
+  .image-wrapper {
+    justify-content: center;
+    margin-bottom: 0;
+  }
+
+  /* Button styling to match Figma specs */
+  .contact-me-btn {
+    width: 100%;
+    max-width: 308px;
+    min-height: 44px;
+    margin: 0 auto;
+  }
+
+  /* Social icons layout - centered with proper spacing */
+  .socials {
+    max-width: 308px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .socials a {
+    width: 36px;
+    height: 36px;
+  }
+
+  /* Typography adjustments for better desktop display */
+  .title {
+    margin-bottom: var(--space-xs);
+  }
+
+  .subtitle {
+    margin-top: var(--space-xs);
+    margin-bottom: 0;
+  }
+
+  /* Credits positioning for desktop */
+  .credits {
+    margin-top: var(--space-2xl);
+    padding: 0 var(--space-lg);
+  }
+}
+
 /* High contrast mode support */
 @media (prefers-contrast: high) {
   .contact-me-btn:focus,
